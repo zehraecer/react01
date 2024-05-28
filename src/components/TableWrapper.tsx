@@ -7,14 +7,18 @@ export const TableWrapper = ({ inputValue, isThere }: TableWrapperTypes) => {
     return (
 
         <>
-            <Vegetables
-                inputValue={inputValue}
-                isThere={isThere}
-            />
-            <FruitsTable
-                inputValue={inputValue}
-                isThere={isThere}
-            />
+
+            <div style={{ display: "flex" }}>
+                <Vegetables
+                    inputValue={inputValue}
+                    isThere={isThere}
+                />
+                <FruitsTable
+                    inputValue={inputValue}
+                    isThere={isThere}
+                />
+            </div>
+
         </>
 
     )
